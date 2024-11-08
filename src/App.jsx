@@ -8,7 +8,7 @@ function App() {
 
   return (    
       <div className="App">
-      <ModalWnd call={modalState} />
+      <ModalWnd call={modalState} onDestroy={()=> setModalState(false) } />
       <button onClick={()=> setModalState(true)}>MODAL WINDOW</button>
       </div>     
     
